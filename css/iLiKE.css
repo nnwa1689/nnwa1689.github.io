@@ -279,7 +279,7 @@
   transform: translateX(-50%);
 }
 .markdown-style {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Consolas";
+  font-family: "Consolas", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -753,11 +753,6 @@
 .markdown-style .code .link {
   text-decoration: underline;
 }
-@font-face {
-  font-family: 'NotoSansTC-Regular';
-  font-style: normal;
-  src: url("https://www.notes-hz.com/hz_include/themes/def/fonts/NotoSansTC-Regular.otf");
-}
 .container {
   margin: 25px auto 20px;
 }
@@ -775,7 +770,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "NotoSansTC-Regular";
+  font-family: "微軟正黑體";
 }
 a {
   color: #333;
