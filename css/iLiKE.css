@@ -1,9 +1,4 @@
 @import url("http://fonts.googleapis.com/earlyaccess/notosanstc.css");
-@font-face {
-  font-family: 'NotoSansTC-Regular';
-  font-style: normal;
-  src: url("fonts/NotoSansTC-Regular.otf");
-}
 .header {
   width: 100%;
   background-color: #f2f2f2;

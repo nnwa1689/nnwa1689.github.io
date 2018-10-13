@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'NotoSansTC-Regular';
-  font-style: normal;
-  src: url("fonts/NotoSansTC-Regular.otf");
-}
 /**********导航头**********/
 .header {
   width: 100%;
