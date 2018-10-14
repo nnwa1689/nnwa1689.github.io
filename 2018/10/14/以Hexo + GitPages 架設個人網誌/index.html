@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="以Hexo + GitPages 架設個人網誌"/>
+
+
+
+
+  <meta name="keywords" content="hexo," />
+
+
+
+
+
+  <link rel="alternate" href="/default" title="長也實驗室HazuyaLab">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="https://nnwa1689.github.io/2018/10/14/以Hexo + GitPages 架設個人網誌/"/>
+
+
+<meta name="description" content="前一陣子想建立一個自己的網誌，而且想用新的方法，而不是架設wordpress之類的系統，所以嘗試使用流行的hexo來架設。   本文將以Windows的環境，使用Hexo + Gitpages來架設網誌。">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="以Hexo + GitPages 架設個人網誌">
+<meta property="og:url" content="https://nnwa1689.github.io/2018/10/14/以Hexo + GitPages 架設個人網誌/index.html">
+<meta property="og:site_name" content="長也實驗室HazuyaLab">
+<meta property="og:description" content="前一陣子想建立一個自己的網誌，而且想用新的方法，而不是架設wordpress之類的系統，所以嘗試使用流行的hexo來架設。   本文將以Windows的環境，使用Hexo + Gitpages來架設網誌。">
+<meta property="og:locale" content="zh-TW">
+<meta property="og:image" content="https://nnwa1689.github.io/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg">
+<meta property="og:image" content="https://nnwa1689.github.io/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h2.jpg">
+<meta property="og:updated_time" content="2018-10-14T11:53:10.206Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="以Hexo + GitPages 架設個人網誌">
+<meta name="twitter:description" content="前一陣子想建立一個自己的網誌，而且想用新的方法，而不是架設wordpress之類的系統，所以嘗試使用流行的hexo來架設。   本文將以Windows的環境，使用Hexo + Gitpages來架設網誌。">
+<meta name="twitter:image" content="https://nnwa1689.github.io/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> 以Hexo + GitPages 架設個人網誌 - 長也實驗室HazuyaLab </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">長也實驗室HazuyaLab</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/">
+                            
+                            
+                                首頁
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                歸檔
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/tags">
+                            
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                關於
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="https://www.notes-hz.com/">
+                            
+                            
+                                筆記長也
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          以Hexo + GitPages 架設個人網誌
+        
+      </h1>
+
+      <time class="post-time">
+          10月 14 2018
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p>前一陣子想建立一個自己的網誌，而且想用新的方法，而不是架設wordpress之類的系統，所以嘗試使用流行的hexo來架設。  </p>
+<p>本文將以Windows的環境，使用Hexo + Gitpages來架設網誌。<br><a id="more"></a></p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo?"></a>Hexo?</h2><blockquote>
+<p>快速、簡單且強大的網誌框架</p>
+</blockquote>
+<ul>
+<li>以makedown寫文章</li>
+<li>以命令列方式操作</li>
+<li>快速佈署至GitPages</li>
+</ul>
+<h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>hexo由node.js編寫而成，可以使用npm或者yarn來安裝，本文以yarn舉例。</p>
+<h4 id="安裝yarn"><a href="#安裝yarn" class="headerlink" title="安裝yarn"></a>安裝yarn</h4><p>安裝yran之前需先安裝Chocolatey，輸入以下指令安裝<br>    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(‘<a href="https://chocolatey.org/install.ps1&#39;)" target="_blank" rel="noopener">https://chocolatey.org/install.ps1&#39;)</a>)<br>接著安裝yarn<br>    $ choco install yarn<br>再來安裝hexo<br>    $ yarn global add hexo<br>安裝完成後，可以建立一個hexo的網誌<br>    $ hexo init blog<br>hexo本身有提供server，在blog目錄下啟動終端機並輸入<br>    $ hexo server<br>完成後瀏覽localhost:4000 就可以看到建立好的網誌了<br><img src="/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg"></p>
+<h2 id="hexo的目錄結構"><a href="#hexo的目錄結構" class="headerlink" title="hexo的目錄結構"></a>hexo的目錄結構</h2><pre><code>blog/
+_config.yml            -&gt; hexo的主設定檔
+package.json           -&gt; 相依套件列表
+node_modules/          -&gt; 相依套件
+public/                -&gt; 生成的靜態網站檔案
+source/
+    _posts               -&gt; 文章資料夾
+    hello-world.md     -&gt; 文章
+themes/                -&gt; 主題面
+    landscape/
+    _config.yml        -&gt; 主題設定檔
+scaffolds/
+    draft.md
+    page.md
+    post.md
+</code></pre><h2 id="設定檔"><a href="#設定檔" class="headerlink" title="設定檔"></a>設定檔</h2><h4 id="Hexo設定檔"><a href="#Hexo設定檔" class="headerlink" title="Hexo設定檔"></a>Hexo設定檔</h4><ul>
+<li>網誌名稱 - title、網誌的作者、網誌描述、時區、時間格式等</li>
+<li>語法高亮(highlight)</li>
+<li>語系設定</li>
+<li>是否產生assets資料夾</li>
+<li>主題設定</li>
+<li>主題設定檔</li>
+</ul>
+<p>主題設定檔依照不同的主題有所不同，大致可以設定:</p>
+<ul>
+<li>作者頭貼、網站圖標</li>
+<li>社群網站連結</li>
+<li>導航管理</li>
+<li>其他客製化選項</li>
+<li>disqus等留言外掛(部分主題有)</li>
+</ul>
+<h4 id="更換網誌主題"><a href="#更換網誌主題" class="headerlink" title="更換網誌主題"></a>更換網誌主題</h4><p>我選擇使用polarbear 這個主題，主要是非常的簡潔也非常容易設定，也包含了回覆留言的插件。</p>
+<h5 id="以git安裝主題"><a href="#以git安裝主題" class="headerlink" title="以git安裝主題"></a>以git安裝主題</h5><pre><code>$ git clone https://github.com/frostfan/hexo-theme-polarbear themes/polarbear
+</code></pre><p>如果看過主題官方文件，你會發現他還要安裝另外一個東西，這是用來編譯裡面的sass樣式檔，將其編譯為CSS，但並不是每個主題都需要。</p>
+<pre><code>$ npm install hexo-renderer-scss --save
+</code></pre><p>並修改_config.yml網站設定檔，將主題設定為polarbear<br>    theme: polarbear</p>
+<p>這樣就完成主題的套用，如果要在本地server看到記得重新啟動server。  </p>
+<p>關於其他主題的設定與使用，請參考官方文件說明。</p>
+<h2 id="建立網誌頁面"><a href="#建立網誌頁面" class="headerlink" title="建立網誌頁面"></a>建立網誌頁面</h2><h4 id="建立about頁面"><a href="#建立about頁面" class="headerlink" title="建立about頁面"></a>建立about頁面</h4><pre><code>$ hexo new page &quot;about&quot;
+</code></pre><p>編輯主題設定檔的menu部分，預設有about就無須理會，如果沒有就加入至選單當中</p>
+<pre><code>menu:
+    首頁: /
+    歸檔: /archives
+    Tags: /tags
+    關於: /about
+</code></pre><p>建立後，會以source/頁面名稱/index.md來建立檔案，若要更改葉面內容修改目錄中的index.md即可。</p>
+<p>這是我的about頁面的md檔案內容</p>
+<pre><code>---
+title: 關於
+date: 2018-10-13 15:03:44
+---
+
+# 長也實驗室
+&gt; 長也實驗室是一個發無聊東西的地方
+&gt; 可能包含了PHP、notes-hz.com的開發日記、一些有關程式的東西
+
+# 長也 - 年少無為
+## 程式技能
+* 比較常用：PHP、Java、HTML/CSS
+* 只會基本：C#、C
+* 學習ING：JavaScript、python
+
+## 閱讀書目
+### 程式相關
+* Dreamweaver 與 PHP + Mysql + jQuery Mobile互動式網站程式設計（ 林梓涵, 謝雨辰　著）
+* 資料結構－使用JAVA (  蔡明志   著    )
+* JAVA程式設計藝術    (   張子庭   著    )
+* JavaScript 網頁程式設計超入門（　狩野祐東  著 ,  陳禹豪  譯 　）
+* 現代PHP （Josh Lockhart 著、張正豪 譯）
+
+### 其他
+* 我死過，所以知道怎麼活  - 與死神相遇的11分鐘（  鐘灼輝  著  ）
+
+## 興趣
+* 網頁、程式
+* 棒球與排球（雖然都打一下就沒了也很弱、慢跑
+* 底特律：變人、惡靈古堡、刺客教條、osu!
+
+* Angel Beats!、驚爆遊戲、鑽石王牌、王牌投手、排球少年、坂道上的阿波羅、3月的獅子、青之驅魔師、花牌情緣、博多豚骨拉麵團、學園奶爸……
+
+* 機車路權
+
+* 你的孩子不是你的孩子、他們在畢業的前一天爆炸
+</code></pre><p>結果在這裡：<a href="https://nnwa1689.github.io/about/">https://nnwa1689.github.io/about/</a></p>
+<h2 id="建立一篇文章"><a href="#建立一篇文章" class="headerlink" title="建立一篇文章"></a>建立一篇文章</h2><p>預設已經有helloWorld文章，再新增一篇我們自己的</p>
+<h4 id="設定"><a href="#設定" class="headerlink" title="設定"></a>設定</h4><p>新增以前，可以將網站設定檔中的post_asset_folder改為true，每次在建立文章時都會建立一個資料夾，可以用來存放圖片等</p>
+<pre><code>post_asset_folder: true
+</code></pre><p>新增一篇名為長也實驗室開張的文章<br>    $ hexo new post 長也實驗室開張</p>
+<p>新增完成的文章會被放在source/_posts/中，一樣是.md檔；若有開啟自動建立資料夾也會同時建立一個與文章相同名稱的資料夾。</p>
+<h4 id="插入圖片"><a href="#插入圖片" class="headerlink" title="插入圖片"></a>插入圖片</h4><p>插入圖片的格式  </p>
+<pre><code>{% asset_img [image-name] %}
+{% asset_img [image-name] [title] %}
+</code></pre><p>記得先將圖片丟入與文章同名的資料夾，例如要插入名為im.jpg的圖片，將im.jpg放入同名資料夾後，編輯md檔</p>
+<pre><code>{% asset_img im.jpg %}
+</code></pre><h2 id="佈署至GitPages"><a href="#佈署至GitPages" class="headerlink" title="佈署至GitPages"></a>佈署至GitPages</h2><p>佈署方式不只一種，我以目前很常見的Github Page來示範</p>
+<h4 id="建立專案"><a href="#建立專案" class="headerlink" title="建立專案"></a>建立專案</h4><p>先建立一個Github專案，名稱為username.github.io。例如說我的帳號叫做nnwa1689，那我就創建一個nnwa1689.github.io的專案。(因為我已經建立過了所以會被報錯)<br><img src="/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h2.jpg"></p>
+<h4 id="安裝git佈署套件"><a href="#安裝git佈署套件" class="headerlink" title="安裝git佈署套件"></a>安裝git佈署套件</h4><p> $ yarn add hexo-deployer-git</p>
+<h4 id="修改網站設定檔"><a href="#修改網站設定檔" class="headerlink" title="修改網站設定檔"></a>修改網站設定檔</h4><p>找到deploy的部分，修改為:</p>
+<pre><code>deploy:
+    type: git
+    repo: https://github.com/&lt;你的帳號&gt;/&lt;專案名稱&gt;
+    branch: &lt;分支，通常是master&gt;
+</code></pre><p>最後以指令部署</p>
+<pre><code>$ hexo deploy
+</code></pre><p>接著訪問剛剛建立好的yourname.github.io看看吧</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="文章預覽"><a href="#文章預覽" class="headerlink" title="文章預覽"></a>文章預覽</h4><p>我建議在文章內以標記來決定文章預覽的長度</p>
+<pre><code>預覽看得到我
+&lt;!--more--&gt;
+預覽看不到我
+</code></pre><h4 id="Hexo指令一覽"><a href="#Hexo指令一覽" class="headerlink" title="Hexo指令一覽"></a>Hexo指令一覽</h4><pre><code>$ hexo init
+$ hexo clean
+$ hexo generate
+$ hexo new post
+</code></pre><p>本文章同步發於筆記長也:<a href="https://www.notes-hz.com/blog?id=183" target="_blank" rel="noopener">https://www.notes-hz.com/blog?id=183</a></p>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/hexo/">hexo</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2018/10/14/長也實驗室開張/">
+        <span class="next-text nav-default">長也實驗室開張</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+    <div style="text-align:center;">
+        
+    </div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2017 -
+    
+    2018
+    <span class="footer-author">長也.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+<script type="text/javascript">
+  var disqus_shortname = 'chang-ye-noxiao-fei-wo';
+  var disqus_identifier = '2018/10/14/以Hexo + GitPages 架設個人網誌/';
+
+  var disqus_title = "以Hexo + GitPages 架設個人網誌";
+
+
+  var disqus = {
+    load : function disqus(){
+        if(typeof DISQUS !== 'object') {
+          (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+    }
+  }
+
+  
+    var disqus_config = function () {
+        this.page.url = disqus_url;
+        this.page.identifier = disqus_identifier;
+        this.page.title = disqus_title;
+    };
+  
+disqus.load();
+</script>
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
