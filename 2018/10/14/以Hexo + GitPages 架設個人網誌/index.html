@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://nnwa1689.github.io/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg">
 <meta property="og:image" content="https://nnwa1689.github.io/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h2.jpg">
-<meta property="og:updated_time" content="2018-10-14T11:53:10.206Z">
+<meta property="og:updated_time" content="2018-10-14T11:55:35.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="以Hexo + GitPages 架設個人網誌">
 <meta name="twitter:description" content="前一陣子想建立一個自己的網誌，而且想用新的方法，而不是架設wordpress之類的系統，所以嘗試使用流行的hexo來架設。   本文將以Windows的環境，使用Hexo + Gitpages來架設網誌。">
@@ -171,7 +171,9 @@
 <li>快速佈署至GitPages</li>
 </ul>
 <h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>hexo由node.js編寫而成，可以使用npm或者yarn來安裝，本文以yarn舉例。</p>
-<h4 id="安裝yarn"><a href="#安裝yarn" class="headerlink" title="安裝yarn"></a>安裝yarn</h4><p>安裝yran之前需先安裝Chocolatey，輸入以下指令安裝<br>    Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(‘<a href="https://chocolatey.org/install.ps1&#39;)" target="_blank" rel="noopener">https://chocolatey.org/install.ps1&#39;)</a>)<br>接著安裝yarn<br>    $ choco install yarn<br>再來安裝hexo<br>    $ yarn global add hexo<br>安裝完成後，可以建立一個hexo的網誌<br>    $ hexo init blog<br>hexo本身有提供server，在blog目錄下啟動終端機並輸入<br>    $ hexo server<br>完成後瀏覽localhost:4000 就可以看到建立好的網誌了<br><img src="/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg"></p>
+<h4 id="安裝yarn"><a href="#安裝yarn" class="headerlink" title="安裝yarn"></a>安裝yarn</h4><p>安裝yran之前需先安裝Chocolatey，輸入以下指令安裝  </p>
+<pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString(&apos;https://chocolatey.org/install.ps1&apos;))
+</code></pre><p>接著安裝yarn<br>    $ choco install yarn<br>再來安裝hexo<br>    $ yarn global add hexo<br>安裝完成後，可以建立一個hexo的網誌<br>    $ hexo init blog<br>hexo本身有提供server，在blog目錄下啟動終端機並輸入<br>    $ hexo server<br>完成後瀏覽localhost:4000 就可以看到建立好的網誌了<br><img src="/2018/10/14/以Hexo%20+%20GitPages%20架設個人網誌/h1.jpg"></p>
 <h2 id="hexo的目錄結構"><a href="#hexo的目錄結構" class="headerlink" title="hexo的目錄結構"></a>hexo的目錄結構</h2><pre><code>blog/
 _config.yml            -&gt; hexo的主設定檔
 package.json           -&gt; 相依套件列表
