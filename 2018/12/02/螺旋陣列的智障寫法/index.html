@@ -43,7 +43,7 @@
 <meta property="og:site_name" content="長也實驗室HazuyaLab">
 <meta property="og:description" content="因應(?)PYTHON的老師出了一個作業是螺旋陣列 大概就是長這樣 輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3    實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@ CODE在這裡">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2018-12-01T18:11:32.979Z">
+<meta property="og:updated_time" content="2018-12-01T18:15:06.215Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="螺旋陣列的智障寫法">
 <meta name="twitter:description" content="因應(?)PYTHON的老師出了一個作業是螺旋陣列 大概就是長這樣 輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3    實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@ CODE在這裡">
@@ -162,8 +162,9 @@
 <p>輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3</p>
   
 <p>實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@</p>
-<p>CODE在這裡<br><a id="more"></a><br>    def rotate(listtmp, m, n):</p>
-<pre><code>    # 建立一個LIST，用以填入數字，其中多建立一個外圈作為牆壁，並將內容填入 -1
+<p>CODE在這裡<br><a id="more"></a></p>
+<pre><code>def rotate(listtmp, m, n):
+    # 建立一個LIST，用以填入數字，其中多建立一個外圈作為牆壁，並將內容填入 -1
     l2 = [[-1 for i in range(int(n) + 2)]for i in range(int(m) + 2)]
     for i in range(1, len(l2) - 1):  # 除了最外圍，其餘填入0
         for j in range(1, len(l2[i]) - 1):
