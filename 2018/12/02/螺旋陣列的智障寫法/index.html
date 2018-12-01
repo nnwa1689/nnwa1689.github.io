@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="螺旋陣列的智障寫法"/>
+
+
+
+
+  <meta name="keywords" content="python," />
+
+
+
+
+
+  <link rel="alternate" href="/default" title="長也實驗室HazuyaLab">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="https://nnwa1689.github.io/2018/12/02/螺旋陣列的智障寫法/"/>
+
+
+<meta name="description" content="因應(?)PYTHON的老師出了一個作業是螺旋陣列 大概就是長這樣 輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3    實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@ CODE在這裡">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="螺旋陣列的智障寫法">
+<meta property="og:url" content="https://nnwa1689.github.io/2018/12/02/螺旋陣列的智障寫法/index.html">
+<meta property="og:site_name" content="長也實驗室HazuyaLab">
+<meta property="og:description" content="因應(?)PYTHON的老師出了一個作業是螺旋陣列 大概就是長這樣 輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3    實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@ CODE在這裡">
+<meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2018-12-01T18:11:32.979Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="螺旋陣列的智障寫法">
+<meta name="twitter:description" content="因應(?)PYTHON的老師出了一個作業是螺旋陣列 大概就是長這樣 輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3    實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@ CODE在這裡">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> 螺旋陣列的智障寫法 - 長也實驗室HazuyaLab </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">長也實驗室HazuyaLab</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/">
+                            
+                            
+                                首頁
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                歸檔
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/tags">
+                            
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                關於
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="https://www.notes-hz.com/">
+                            
+                            
+                                筆記長也
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          螺旋陣列的智障寫法
+        
+      </h1>
+
+      <time class="post-time">
+          12月 02 2018
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p>因應(?)PYTHON的老師出了一個作業是螺旋陣列</p>
+<p>大概就是長這樣</p>
+<p>輸入：W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3</p>
+  
+<p>實在不知道怎麼寫，只好土法煉鋼一個一個填上去了@@</p>
+<p>CODE在這裡<br><a id="more"></a><br>    def rotate(listtmp, m, n):</p>
+<pre><code>    # 建立一個LIST，用以填入數字，其中多建立一個外圈作為牆壁，並將內容填入 -1
+    l2 = [[-1 for i in range(int(n) + 2)]for i in range(int(m) + 2)]
+    for i in range(1, len(l2) - 1):  # 除了最外圍，其餘填入0
+        for j in range(1, len(l2[i]) - 1):
+            l2[i][j] = 0
+    # 到這裡，最外圍變成-1，其餘為0，-1代表牆壁，避免填出範圍
+    x = 0    # X填到哪裡
+    y = 1    # Y填到哪裡
+    inl = 0    # 輸入串列目前輸入到哪裡
+    trave = &quot;R&quot;    # 目前填的方向
+    while inl &lt; len(listtmp):    # 直到所有輸入的值都被填入
+        # 向RIGHT填入
+        if(trave == &quot;R&quot;):
+            x += 1
+            while(l2[y][x] != -1 and l2[y][x] == 0):
+                l2[y][x] = listtmp[inl]
+                x += 1
+                inl += 1
+            trave = &quot;D&quot;
+            x -= 1
+        # 向Down填入
+        if(trave == &quot;D&quot;):
+            y += 1
+            while(l2[y][x] != -1 and l2[y][x] == 0):
+                l2[y][x] = listtmp[inl]
+                y += 1
+                inl += 1
+            trave = &quot;L&quot;
+            y -= 1
+        # 向LEFT填入
+        if(trave == &quot;L&quot;):
+            x -= 1
+            while(l2[y][x] != -1 and l2[y][x] == 0):
+                l2[y][x] = listtmp[inl]
+                x -= 1
+                inl += 1
+            trave = &quot;U&quot;
+            x += 1
+        # 向UP填入
+        if(trave == &quot;U&quot;):
+            y -= 1
+            while(l2[y][x] != -1 and l2[y][x] == 0):
+                l2[y][x] = listtmp[inl]
+                y -= 1
+                inl += 1
+            trave = &quot;R&quot;
+            y += 1
+    for i in range(1, len(l2) - 1):
+        print(&quot;\n&quot;)
+        for j in range(1, len(l2[i]) - 1):
+            print(&quot;{0: &gt;3}&quot;.format(str(l2[i][j])), end=&apos; &apos;)
+
+
+if __name__ == &quot;__main__&quot;:
+    numlist = [None for i in range(len(sys.argv) - 3)]
+    for i in range(1, len(sys.argv) - 2):
+        numlist[i - 1] = sys.argv[i]
+    rotate(numlist, sys.argv[len(sys.argv) - 2], sys.argv[len(sys.argv) - 1])
+    # W12A1.py 1 2 3 4 5 6 7 8 9 10 11 12 4 3
+</code></pre>
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/python/">python</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2018/10/14/以Hexo + GitPages 架設個人網誌/">
+        <span class="next-text nav-default">以Hexo + GitPages 架設個人網誌</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+    <div style="text-align:center;">
+        
+    </div>
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2017 -
+    
+    2018
+    <span class="footer-author">長也.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+<script type="text/javascript">
+  var disqus_shortname = 'chang-ye-noxiao-fei-wo';
+  var disqus_identifier = '2018/12/02/螺旋陣列的智障寫法/';
+
+  var disqus_title = "螺旋陣列的智障寫法";
+
+
+  var disqus = {
+    load : function disqus(){
+        if(typeof DISQUS !== 'object') {
+          (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
+          $('#load-disqus').remove(); ///加载后移除按钮
+        }
+    }
+  }
+
+  
+    var disqus_config = function () {
+        this.page.url = disqus_url;
+        this.page.identifier = disqus_identifier;
+        this.page.title = disqus_title;
+    };
+  
+disqus.load();
+</script>
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
